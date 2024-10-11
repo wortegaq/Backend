@@ -6,6 +6,7 @@ import { CommonModule } from './common/common.module';
 import { DireccionesModule } from './Direccion/direcciones.module'
 import { ElementosModule } from './Elemento/elementos.module';
 import { FeedbackModule } from './Feedback/feedback.module';
+import { PromocionModule } from './Promocion/promocion.module';
 
 @Module({
   imports: [
@@ -31,8 +32,11 @@ import { FeedbackModule } from './Feedback/feedback.module';
     DireccionesModule,
     ElementosModule,
     FeedbackModule,
+    PromocionModule,
   ],
   controllers: [],
   providers: [],
 })
 export class AppModule { }
+
+
