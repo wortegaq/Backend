@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsuariosModule } from './usuarios/usuarios.module';
 import { CommonModule } from './common/common.module';
+import { DireccionesModule } from './Direccion/direcciones.module'
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { CommonModule } from './common/common.module';
     }),
     UsuariosModule,
     CommonModule,
+    DireccionesModule,
   ],
   controllers: [],
   providers: [],
