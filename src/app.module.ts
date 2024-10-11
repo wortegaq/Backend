@@ -5,7 +5,7 @@ import { UsuariosModule } from './usuarios/usuarios.module';
 import { CommonModule } from './common/common.module';
 import { DireccionesModule } from './Direccion/direcciones.module'
 import { ElementosModule } from './Elemento/elementos.module';
-
+import { FeedbackModule } from './Feedback/feedback.module';
 
 @Module({
   imports: [
@@ -30,6 +30,7 @@ import { ElementosModule } from './Elemento/elementos.module';
     CommonModule,
     DireccionesModule,
     ElementosModule,
+    FeedbackModule,
   ],
   controllers: [],
   providers: [],
