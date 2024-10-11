@@ -4,6 +4,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsuariosModule } from './usuarios/usuarios.module';
 import { CommonModule } from './common/common.module';
 import { DireccionesModule } from './Direccion/direcciones.module'
+import { ElementosModule } from './Elemento/elementos.module';
+
 
 @Module({
   imports: [
@@ -27,6 +29,7 @@ import { DireccionesModule } from './Direccion/direcciones.module'
     UsuariosModule,
     CommonModule,
     DireccionesModule,
+    ElementosModule,
   ],
   controllers: [],
   providers: [],
