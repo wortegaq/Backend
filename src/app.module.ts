@@ -9,7 +9,7 @@ import { FeedbackModule } from './Feedback/feedback.module';
 import { PromocionModule } from './Promocion/promocion.module';
 import { FeedbackPromocionModule } from './feedbackpromocion/feedback-promocion.module'; 
 import { CategoriaModule } from './categoria/categoria.module';
-
+import { EstadoOrden } from './estado-orden/entities/estado-orden.entity';
 
 
 @Module({
@@ -39,7 +39,10 @@ import { CategoriaModule } from './categoria/categoria.module';
     PromocionModule,
     FeedbackPromocionModule,
     CategoriaModule,
-    
+    EstadoOrden,
+
+
+
   ],
   controllers: [],
   providers: [],
