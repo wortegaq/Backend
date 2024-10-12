@@ -7,6 +7,10 @@ import { DireccionesModule } from './Direccion/direcciones.module'
 import { ElementosModule } from './Elemento/elementos.module';
 import { FeedbackModule } from './Feedback/feedback.module';
 import { PromocionModule } from './Promocion/promocion.module';
+import { FeedbackPromocionModule } from './feedbackpromocion/feedback-promocion.module'; 
+import { CategoriaModule } from './categoria/categoria.module';
+
+
 
 @Module({
   imports: [
@@ -33,6 +37,9 @@ import { PromocionModule } from './Promocion/promocion.module';
     ElementosModule,
     FeedbackModule,
     PromocionModule,
+    FeedbackPromocionModule,
+    CategoriaModule,
+    
   ],
   controllers: [],
   providers: [],
