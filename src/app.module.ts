@@ -9,7 +9,8 @@ import { FeedbackModule } from './Feedback/feedback.module';
 import { PromocionModule } from './Promocion/promocion.module';
 import { FeedbackPromocionModule } from './feedbackpromocion/feedback-promocion.module'; 
 import { CategoriaModule } from './categoria/categoria.module';
-import { EstadoOrden } from './estado-orden/entities/estado-orden.entity';
+import { BitacoraModule } from './bitacora/bitacora.module';
+
 
 
 @Module({
@@ -31,6 +32,7 @@ import { EstadoOrden } from './estado-orden/entities/estado-orden.entity';
       autoLoadEntities: true,
       synchronize: true,
     }),
+
     UsuariosModule,
     CommonModule,
     DireccionesModule,
@@ -39,10 +41,9 @@ import { EstadoOrden } from './estado-orden/entities/estado-orden.entity';
     PromocionModule,
     FeedbackPromocionModule,
     CategoriaModule,
-    EstadoOrden,
-
-
-
+    BitacoraModule,
+    
+    
   ],
   controllers: [],
   providers: [],
