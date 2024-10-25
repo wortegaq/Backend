@@ -1,5 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
+
 @Entity('elemento')
 export class Elemento {
   @PrimaryGeneratedColumn()
@@ -22,4 +23,8 @@ export class Elemento {
 
   @Column({ type: 'boolean', default: false })
   Eliminado: boolean;
+
+
+
+  
 }

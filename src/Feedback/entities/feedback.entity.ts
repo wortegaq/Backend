@@ -30,6 +30,8 @@ export class Feedback {
   usuario: Usuario;
 
   @ManyToOne(() => Elemento, (elemento) => elemento.ID_Elemento)
-  @JoinColumn({ name: 'ID_Elemento' })
+  
   elemento: Elemento;
+  
+
 }

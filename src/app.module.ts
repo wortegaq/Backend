@@ -9,7 +9,7 @@ import { FeedbackModule } from './Feedback/feedback.module';
 import { PromocionModule } from './Promocion/promocion.module';
 import { FeedbackPromocionModule } from './feedbackpromocion/feedback-promocion.module'; 
 import { CategoriaModule } from './categoria/categoria.module';
-import { BitacoraModule } from './bitacora/bitacora.module';
+
 
 
 
@@ -41,9 +41,10 @@ import { BitacoraModule } from './bitacora/bitacora.module';
     PromocionModule,
     FeedbackPromocionModule,
     CategoriaModule,
-    BitacoraModule,
-    
-    
+   
+  
+
+
   ],
   controllers: [],
   providers: [],
