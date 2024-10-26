@@ -11,7 +11,9 @@ export class UsuariosController {
   constructor(private readonly usuariosService: UsuariosService) {}
 
   @Post('login')
+
   @HttpCode(200)  
+
   async login(@Body() loginDto: LoginDto) {
     return this.usuariosService.validateUser(loginDto);
 }

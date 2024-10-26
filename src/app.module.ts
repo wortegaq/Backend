@@ -11,8 +11,6 @@ import { FeedbackPromocionModule } from './feedbackpromocion/feedback-promocion.
 import { CategoriaModule } from './categoria/categoria.module';
 
 
-
-
 @Module({
   imports: [
     ConfigModule.forRoot(),
@@ -41,9 +39,6 @@ import { CategoriaModule } from './categoria/categoria.module';
     PromocionModule,
     FeedbackPromocionModule,
     CategoriaModule,
-   
-  
-
 
   ],
   controllers: [],
