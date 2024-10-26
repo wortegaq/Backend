@@ -14,8 +14,6 @@ async function bootstrap() {
     })
   );
 
-  // Usa el puerto asignado en la variable de entorno o por defecto el 3000
-  const port = process.env.PORT || 3000;
-  await app.listen(port);
+  await app.listen(3000);
 }
 bootstrap();
