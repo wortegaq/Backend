@@ -13,7 +13,7 @@ export class UsuariosController {
   @Post('login')
 
   @HttpCode(200)  
-
+  
   async login(@Body() loginDto: LoginDto) {
     return this.usuariosService.validateUser(loginDto);
 }

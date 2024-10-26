@@ -1,5 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
-
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import { HistorialPrecios } from '../../historiaprecios/entities/historial-precios.entity';
 
 @Entity('elemento')
 export class Elemento {
@@ -23,6 +23,12 @@ export class Elemento {
 
   @Column({ type: 'boolean', default: false })
   Eliminado: boolean;
+
+
+  @OneToMany(() => HistorialPrecios, historialPrecios => historialPrecios.ID_Elemento)
+  historialPrecios: HistorialPrecios[];
+  
+  
 
 
 

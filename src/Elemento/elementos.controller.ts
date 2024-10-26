@@ -1,12 +1,12 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { ElementosService } from './elementos.service';
-import { CreateElementoDto } from './dto/create-elemento.dto';
-import { UpdateElementoDto } from './dto/update-elemento.dto';
+import { CreateElementoDto } from './dto/create-elementos.dto';
+import { UpdateElementoDto } from './dto/update-elementos.dto';
 
 @Controller('elementos')
 export class ElementosController {
   constructor(private readonly elementosService: ElementosService) {}
-
+  
   @Post()
   create(@Body() createElementoDto: CreateElementoDto) {
     return this.elementosService.create(createElementoDto);
@@ -31,4 +31,5 @@ export class ElementosController {
   remove(@Param('id') id: string) {
     return this.elementosService.remove(+id);
   }
+
 }

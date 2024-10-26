@@ -1,6 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
 import { Usuario } from '../../usuarios/entities/usuario.entity';
-import { Elemento } from '../../Elemento/entities/elemento.entity';
+import { Elemento } from '../../Elemento/entities/elementos.entity';
+
 
 @Entity('feedback')
 export class Feedback {
