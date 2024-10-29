@@ -1,4 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import { Orden } from '../../orden/entities/orden.entity';
+
 
 @Entity('usuario')
 export class Usuario {
@@ -22,4 +24,7 @@ export class Usuario {
 
   @Column({ type: 'boolean', default: false }) // Cambio de tinyint a boolean
   Eliminado: boolean;
+
+  @OneToMany(() => Orden, orden => orden.ID_Usuario)
+  ordenes: Orden[];
 }
