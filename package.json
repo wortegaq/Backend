@@ -9,7 +9,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "build": "node node_modules/@nestjs/cli/bin/nest.js",
+    "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "node dist/main",
     "start:dev": "nest start --watch",
