@@ -1,5 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
-import { Orden } from '../../orden/entities/orden.entity';
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity('estado_orden')
 export class EstadoOrden {
@@ -8,11 +7,5 @@ export class EstadoOrden {
 
   @Column({ type: 'varchar', length: 50 })
   Estado: string;
-
-
-  @OneToMany(() => Orden, orden => orden.ID_Estado_Orden)
-  ordenes: Orden[];
-
-  
 }
 
