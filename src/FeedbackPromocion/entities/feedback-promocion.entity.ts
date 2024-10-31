@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, ManyToOne, JoinColumn } from 'typeorm';
-import { Feedback } from '../../feedback/entities/feedback.entity';
-import { Promocion } from '../../promocion/entities/promocion.entity';
+import { Feedback } from '../../Feedback/entities/feedback.entity';
+import { Promocion } from '../../Promocion/entities/promocion.entity';
 
 @Entity('feedback_promocion')
 export class FeedbackPromocion {
