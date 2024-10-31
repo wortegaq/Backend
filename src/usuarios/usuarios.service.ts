@@ -51,11 +51,11 @@ export class UsuariosService {
   }
 
   async validateUser(loginDto: LoginDto): Promise<any> {
-    const { Nombre, password } = loginDto;
-    console.log('Nombre:', Nombre);  // Verificar el nombre proporcionado
+    const { Correo_Electronico, password } = loginDto;
+    console.log('Nombre:', Correo_Electronico);  // Verificar el nombre proporcionado
     console.log('Contraseña:', password);  // Verificar la contraseña proporcionada
   
-    const usuario = await this.usuariosRepository.findOne({ where: { Nombre } });   
+    const usuario = await this.usuariosRepository.findOne({ where: { Correo_Electronico } });   
   
     if (!usuario) {
       throw new UnauthorizedException('Credenciales incorrectas');
@@ -73,7 +73,7 @@ export class UsuariosService {
     return {
       mensaje: 'Login exitoso',
       usuario: {
-        nombre: usuario.Nombre,
+        ID_Usuario: usuario.ID_Usuario,
       },
     };
   }

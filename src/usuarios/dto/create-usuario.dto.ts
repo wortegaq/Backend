@@ -16,4 +16,9 @@ export class CreateUsuarioDto {
   @IsEnum(['Activo', 'Inactivo'])
   @IsOptional()
   Estado?: 'Activo' | 'Inactivo';
+
+
+  @IsEnum(['U', 'C'])  // Define los valores aceptables como 'U' o 'C'
+  @IsNotEmpty()
+  rol_usuario: string;
 }

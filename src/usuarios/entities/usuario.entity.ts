@@ -14,6 +14,11 @@ export class Usuario {
   @Column({ type: 'varchar', length: 255 })
   Contraseña: string;
 
+  @Column('text', {
+    nullable: true,
+  })
+  rol_usuario: string;
+
   @Column({ type: 'timestamp' })
   Fecha_Registro: Date;  // Cambio de datetime a timestamp
 
